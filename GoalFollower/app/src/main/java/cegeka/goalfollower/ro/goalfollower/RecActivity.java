@@ -57,7 +57,7 @@ public class RecActivity extends AppCompatActivity implements NfcAdapter.CreateN
             public void onClick(View v) {
                 Readfrec();
                 recitem.desc = editdesc.getText().toString();
-                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-hh-mm");
                 try {
                     recitem.dueDate = sdf.parse(editdate.getText().toString());
                 } catch (Exception ex) {

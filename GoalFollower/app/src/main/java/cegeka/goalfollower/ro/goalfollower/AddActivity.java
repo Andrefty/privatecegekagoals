@@ -76,7 +76,7 @@ public class AddActivity extends AppCompatActivity {
                 if (Validate()) {
                     Readf();
                     item.desc = editTextdesc.getText().toString();
-                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd-hh-mm");
                     try {
                         item.dueDate = sdf.parse(textDate.getText().toString());
                     } catch (Exception ex) {
