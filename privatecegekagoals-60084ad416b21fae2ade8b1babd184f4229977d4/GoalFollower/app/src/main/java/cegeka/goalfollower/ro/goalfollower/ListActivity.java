@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -27,7 +28,8 @@ public class ListActivity extends AppCompatActivity {
     ArrayList<Goal> returnlist=new ArrayList<Goal>();
     List<String> names=new ArrayList<>();
     List<Date> duedate=new ArrayList<>();
-    //List<Boolean> checked = new ArrayList<>();
+    Button save;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +55,6 @@ public class ListActivity extends AppCompatActivity {
                 startActivity(detailIntent);
             }
         });
-
 
     }
     public void Readf(){FileInputStream fis;

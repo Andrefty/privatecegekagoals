@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     String filename = "image";
     ImageView img_cam;
     TextView score ;
-    int sum;
+    Button refresh ;
 
 
     private File createImageFile() throws IOException {
@@ -89,13 +89,18 @@ public class MainActivity extends AppCompatActivity {
         img_cam = (ImageView) findViewById(R.id.profile_img);
         prof_pic = (Button) findViewById(R.id.prof_pic);
         score = (TextView) findViewById(R.id.score_text_view);
-
-        Intent in = getIntent();
-        sum = in.getIntExtra("com.example.cristi.firstcegeka.sum" , -1);
-
-        score.setText("Your Score is : " + sum );
-
         Readf();
+
+        score.setText("Your Score is : " + More_Info.sum);
+
+        refresh = (Button) findViewById(R.id.refresh_btn);
+        refresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                score.setText("Your Score is : " + More_Info.sum );
+            }
+        });
+
 
         if (mCurrentPhotoPath!=null)
         {

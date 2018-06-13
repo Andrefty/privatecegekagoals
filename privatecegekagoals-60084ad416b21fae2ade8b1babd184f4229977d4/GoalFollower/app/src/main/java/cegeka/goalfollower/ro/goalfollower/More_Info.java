@@ -17,8 +17,7 @@ public class More_Info extends AppCompatActivity {
     static boolean[] check = new boolean[1001];
     CheckBox done ;
     int index;
-    static int sum ;
-    Button save;
+    public static int sum ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,16 +47,10 @@ public class More_Info extends AppCompatActivity {
             }
         });
 
-        final Intent sumIntent = new Intent (getApplicationContext() , MainActivity.class);
-        sumIntent.putExtra("com.example.cristi.firstcegeka.sum" , sum);
-        save = (Button) findViewById(R.id.save_check_btn);
-        save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(sumIntent);
-            }
-        });
+
+
 
     }
+
 
 }
