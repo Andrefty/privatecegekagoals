@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 2;
     String filename = "image";
     ImageView img_cam;
+    TextView score ;
+    int sum;
 
 
     private File createImageFile() throws IOException {
@@ -85,6 +88,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         img_cam = (ImageView) findViewById(R.id.profile_img);
         prof_pic = (Button) findViewById(R.id.prof_pic);
+        score = (TextView) findViewById(R.id.score_text_view);
+
+        Intent in = getIntent();
+        sum = in.getIntExtra("com.example.cristi.firstcegeka.sum" , -1);
+
+        score.setText("Your Score is : " + sum );
 
         Readf();
 
