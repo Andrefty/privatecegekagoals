@@ -37,9 +37,12 @@ public class AddActivity extends AppCompatActivity {
     EditText textDate = null;
     Button addbtn = null;
     Button beam = null;
-    String filename = "goals";
-    static Goal item = new Goal();
+    static String filename = "goals";
+    Goal item = new Goal();
+    static String concat=null;
     ArrayList<Goal> items = new ArrayList<>();
+    String stupiddesc=null;
+    String stupiddate=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,14 +59,9 @@ public class AddActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (Validate()) {
-                    item.desc = editTextdesc.getText().toString();
-                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                    try {
-                        item.dueDate = sdf.parse(textDate.getText().toString());
-                    } catch (Exception ex) {
-                        ex.printStackTrace();
-                    }
-                    items.add(item);
+                    stupiddesc = editTextdesc.getText().toString();
+                    stupiddate=textDate.getText().toString();
+                    concat=stupiddesc+"/"+stupiddate+"/";
                     Intent intent =
                             new Intent(AddActivity.this, BeamActivity.class);
                     startActivity(intent);
