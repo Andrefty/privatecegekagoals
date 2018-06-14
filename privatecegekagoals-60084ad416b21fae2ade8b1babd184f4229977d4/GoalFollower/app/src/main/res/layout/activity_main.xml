@@ -73,12 +73,12 @@
         android:id="@+id/buttonrecbeam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="59dp"
+        android:layout_marginBottom="11dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="16dp"
         android:onClick="OpenRecActivity"
         android:text="Recieve"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/notification_set"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonaddm" />
 
@@ -86,13 +86,14 @@
         android:id="@+id/prof_pic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="59dp"
+        android:layout_marginBottom="11dp"
         android:layout_marginEnd="101dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="16dp"
         android:text="Profile Picture"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/refresh_btn"
         app:layout_constraintEnd_toStartOf="@+id/buttonrecbeam"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonlist" />
 
@@ -112,13 +113,24 @@
         android:id="@+id/refresh_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="19dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginStart="40dp"
         android:text="refresh"
-        app:layout_constraintBottom_toTopOf="@+id/prof_pic"
-        app:layout_constraintEnd_toStartOf="@+id/buttonaddm"
-        app:layout_constraintStart_toEndOf="@+id/buttonlist"
-        app:layout_constraintTop_toBottomOf="@+id/score_text_view" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/notification_set"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/notification_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="11dp"
+        android:text="SET N"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonrecbeam" />
 
 </android.support.constraint.ConstraintLayout>

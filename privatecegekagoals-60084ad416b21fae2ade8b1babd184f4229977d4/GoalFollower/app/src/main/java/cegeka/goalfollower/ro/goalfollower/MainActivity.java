@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView img_cam;
     TextView score ;
     Button refresh ;
+    Button setnot;
 
 
     private File createImageFile() throws IOException {
@@ -136,6 +137,15 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 }
+            }
+        });
+
+        setnot = (Button) findViewById(R.id.notification_set);
+        setnot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent notificationIntent = new Intent(getApplicationContext() , Notification_1.class);
+                startActivity(notificationIntent);
             }
         });
 
