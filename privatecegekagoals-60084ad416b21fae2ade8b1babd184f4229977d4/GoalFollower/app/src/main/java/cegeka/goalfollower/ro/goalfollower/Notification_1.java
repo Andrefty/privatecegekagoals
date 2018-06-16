@@ -52,7 +52,7 @@ public class Notification_1 extends AppCompatActivity {
 
                     Intent intent3 = new Intent(getApplicationContext() , Notification_reciever.class);
                     intent3.setAction("MY_NOTIFICATION_MESSAGE");
-                    PendingIntent pendingIntent2 = PendingIntent.getBroadcast(getApplicationContext(), 0, intent3, PendingIntent.FLAG_UPDATE_CURRENT);
+                    PendingIntent pendingIntent2 = PendingIntent.getBroadcast(getApplicationContext(), 10000, intent3, PendingIntent.FLAG_UPDATE_CURRENT);
 
                     AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
                     alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent2);

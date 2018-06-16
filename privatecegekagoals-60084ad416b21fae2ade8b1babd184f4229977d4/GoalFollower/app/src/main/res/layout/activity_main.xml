@@ -22,11 +22,12 @@
 
     <ImageView
         android:id="@+id/profile_img"
-        android:layout_width="128dp"
+        android:layout_width="120dp"
         android:layout_height="128dp"
         android:layout_marginEnd="156dp"
         android:layout_marginStart="156dp"
         android:layout_marginTop="16dp"
+        android:rotation="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

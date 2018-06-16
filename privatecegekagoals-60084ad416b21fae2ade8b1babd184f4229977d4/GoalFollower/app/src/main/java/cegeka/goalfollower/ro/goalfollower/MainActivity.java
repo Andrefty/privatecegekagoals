@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     TextView score ;
     Button refresh ;
     Button setnot;
+    String mSecondPhotoPath;
 
 
     private File createImageFile() throws IOException {
@@ -102,12 +103,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mSecondPhotoPath = mCurrentPhotoPath;
 
         if (mCurrentPhotoPath!=null)
         {
             File f= new File(mCurrentPhotoPath);
             Bitmap bMap = BitmapFactory.decodeFile(f.getAbsolutePath());
+            if (bMap == null)
+            {
+                mCurrentPhotoPath = mSecondPhotoPath;
+                 f= new File(mCurrentPhotoPath);
+                 bMap = BitmapFactory.decodeFile(f.getAbsolutePath());
+            }
             img_cam.setImageBitmap(bMap);
+            img_cam.setRotation(90);
         }
 
 
@@ -118,11 +127,11 @@ public class MainActivity extends AppCompatActivity {
                 if (camera_intent.resolveActivity(getPackageManager()) != null)
                 {
 
+                    mSecondPhotoPath = mCurrentPhotoPath;
                     File photoFile = null;
                     try {
                         photoFile = createImageFile();
                         Toast.makeText(getApplicationContext() , "fiser facut " + mCurrentPhotoPath , Toast.LENGTH_LONG).show();
-                        Addg();
                     } catch (IOException ex) {
                         Toast.makeText(getApplicationContext() , "nu s-a putut crea fisierul" , Toast.LENGTH_LONG).show();
                     }
@@ -181,7 +190,15 @@ public class MainActivity extends AppCompatActivity {
         {
             File f= new File(mCurrentPhotoPath);
             Bitmap bMap = BitmapFactory.decodeFile(f.getAbsolutePath());
+            if (bMap == null)
+            {
+                mCurrentPhotoPath = mSecondPhotoPath;
+                f= new File(mCurrentPhotoPath);
+                 bMap = BitmapFactory.decodeFile(f.getAbsolutePath());
+            }
+            Addg();
             img_cam.setImageBitmap(bMap);
+            img_cam.setRotation(90);
         }
     }
 

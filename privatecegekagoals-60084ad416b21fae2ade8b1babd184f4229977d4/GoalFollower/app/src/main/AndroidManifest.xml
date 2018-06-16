@@ -46,6 +46,7 @@
         <activity android:name=".Notification_1"></activity>
 
         <receiver android:name=".Notification_reciever"/>
+        <receiver android:name=".Notification_reciever_2"/>
 
     </application>
 
