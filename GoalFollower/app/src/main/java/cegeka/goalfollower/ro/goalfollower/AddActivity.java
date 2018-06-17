@@ -134,7 +134,7 @@ public class AddActivity extends AppCompatActivity {
             return false;
         }
         SimpleDateFormat format =
-                new SimpleDateFormat("yyyy-MM-dd");
+                new SimpleDateFormat("yyyy-MM-dd-hh-mm");
         Date date = null;
         try {
             date =
