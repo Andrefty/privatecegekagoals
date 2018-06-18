@@ -1,5 +1,6 @@
 package cegeka.goalfollower.ro.goalfollower;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.support.annotation.NonNull;
@@ -13,8 +14,11 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -24,14 +28,19 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
+import static cegeka.goalfollower.ro.goalfollower.AddActivity.filename;
+import static cegeka.goalfollower.ro.goalfollower.More_Info.S_description_not;
+import static cegeka.goalfollower.ro.goalfollower.More_Info.S_name_not;
+import static cegeka.goalfollower.ro.goalfollower.More_Info.index;
+import static cegeka.goalfollower.ro.goalfollower.More_Info.ver;
+
 public class ListActivity extends AppCompatActivity {
-    ArrayList<Goal> returnlist=new ArrayList<Goal>();
+
+  public static ArrayList<Goal> returnlist=new ArrayList<Goal>();
     List<String> names=new ArrayList<>();
      static List<String> descrips=new ArrayList<>();
     List<Date> duedate=new ArrayList<>();
     Button save;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,13 +48,14 @@ public class ListActivity extends AppCompatActivity {
         Readf();
         SimpleDateFormat format =
                 new SimpleDateFormat("yyyy-MM-dd");
-        ListView GoalListView = (ListView) findViewById(R.id.GoalListView);
+        final ListView GoalListView = (ListView) findViewById(R.id.GoalListView);
         for (Goal item : returnlist) {
             names.add(item.desc);
             descrips.add(item.descrip);
             duedate.add(item.dueDate);
         }
         ItemAdapter itemAdapt =  new ItemAdapter(this , names , duedate  );
+
         GoalListView.setAdapter(itemAdapt);
 
         GoalListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -57,7 +67,7 @@ public class ListActivity extends AppCompatActivity {
                 startActivity(detailIntent);
             }
         });
-
+if(ver==true)   {ver=false; finish();}
     }
     public void Readf(){FileInputStream fis;
         try {
@@ -68,5 +78,7 @@ public class ListActivity extends AppCompatActivity {
         } catch (Exception e) {
             Toast.makeText(ListActivity.this,"Err read",Toast.LENGTH_LONG).show();
             e.printStackTrace();
-        }}
+        }
+    }
+
 }

@@ -3,6 +3,7 @@ package cegeka.goalfollower.ro.goalfollower;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -24,12 +25,14 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import static android.app.PendingIntent.getActivity;
+import static cegeka.goalfollower.ro.goalfollower.AddActivity.filename;
 import static cegeka.goalfollower.ro.goalfollower.ListActivity.descrips;
+import static cegeka.goalfollower.ro.goalfollower.ListActivity.returnlist;
 
 public class More_Info extends AppCompatActivity {
 
     static boolean[] check = new boolean[1001];
-    CheckBox done ;
     ArrayList<Integer> charr = new ArrayList<>();
     String itemmf;
     String upoi;
@@ -38,8 +41,9 @@ public class More_Info extends AppCompatActivity {
     String filenameforcheck="checkbox";
     String filenamefordesc="desctime";
     String filenameforname="nae234852045";
-
+public static boolean ver=false;
     Button set;
+    Button done;
     EditText name_not;
     EditText description_not;
     EditText duration_not;
@@ -58,35 +62,26 @@ public class More_Info extends AppCompatActivity {
 
         setContentView(R.layout.activity_more__info);
         Intent in = getIntent();
-        Readfcheck();
-        done = (CheckBox) findViewById(R.id.done_cb);
-        for(int i=0;i<charr.size();i++) {check[charr.get(i)]=true;done.setChecked(check[charr.get(i)]);}
+        done=findViewById(R.id.button2);
         index = in.getIntExtra("com.example.cristi.firstcegeka.Item" , -1);
         Toast.makeText(this, index + "" , Toast.LENGTH_LONG).show();
 
-
-        done.setChecked(check[index]);
-        done.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (check[index]==false)
-                {
-                    check[index] = true ;
-                    charr.add(index);
-                    sum = sum + 100;
-                    Toast.makeText(getApplicationContext() , "" + sum  , Toast.LENGTH_LONG).show();
-                }
-                else
-                {
-                    check[index] = false;
-                    charr.remove(charr.indexOf(index));
-                    sum = sum - 100;
-                    Toast.makeText(getApplicationContext() , "" + sum , Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-
-Addgcheck();
+done.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        returnlist.remove(index);
+        S_description_not.remove(index);
+        S_name_not.remove(index);
+        sum=sum+100;
+        /*SharedPreferences sharedPref = More_Info.this.getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putInt("nuime", sum);
+        editor.commit();*/
+        Addg();
+        ver=true;
+        finish();
+    }
+});
         set = (Button) findViewById(R.id.set_not_info_btn);
         name_not = (EditText) findViewById(R.id.not_name_edit_text);
         description_not = (EditText) findViewById(R.id.not_description_edit_text);
@@ -231,6 +226,23 @@ public void Addnem(){
             ois.close();
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+    public void Addg() {
+        File myfile = new File(this.getFilesDir(), filename);
+        FileOutputStream outputStream;
+        try {
+            outputStream = openFileOutput(filename, MODE_PRIVATE);
+            ObjectOutputStream o = new ObjectOutputStream(outputStream);
+            o.reset();
+            o.writeObject(returnlist);
+            o.flush();
+            o.close();
+            finish();
+        } catch (Exception e) {
+            Toast.makeText(More_Info.this, "no", Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+
         }
     }
 }
