@@ -8,6 +8,7 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="27" />
 
+    <uses-permission android:name="com.android.alarm..permission.SET_ALARM" />
     <uses-permission android:name="android.permission.NFC" />
 
     <uses-feature
@@ -26,16 +27,27 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="cegeka.goalfollower.ro.goalfollower.MainActivity" >
+        <activity
+            android:name="cegeka.goalfollower.ro.goalfollower.MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="cegeka.goalfollower.ro.goalfollower.AddActivity" />
-        <activity android:name="cegeka.goalfollower.ro.goalfollower.ListActivity" />
-        <activity android:name="cegeka.goalfollower.ro.goalfollower.BeamActivity" />
+        <activity
+            android:name="cegeka.goalfollower.ro.goalfollower.AddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cegeka.goalfollower.ro.goalfollower.ListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cegeka.goalfollower.ro.goalfollower.BeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cegeka.goalfollower.ro.goalfollower.RecActivity"
+            android:screenOrientation="portrait" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -46,6 +58,16 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
+        <activity
+            android:name="cegeka.goalfollower.ro.goalfollower.More_Info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cegeka.goalfollower.ro.goalfollower.Notification_1"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="cegeka.goalfollower.ro.goalfollower.Notification_reciever" />
+        <receiver android:name="cegeka.goalfollower.ro.goalfollower.Notification_reciever_2" />
     </application>
 
 </manifest>

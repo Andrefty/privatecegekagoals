@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Cristi\\Documents\\privatecegekagoals\\GoalFollower\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+            "outputFile": "C:\\Users\\qwert\\AndroidStudioProjects\\GoalFollower\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Cristi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\fe353cb64e4a5c6f8afa06d4ed4b37e4\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\qwert\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\350e9b19454321af5cc9ae125d85870a\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

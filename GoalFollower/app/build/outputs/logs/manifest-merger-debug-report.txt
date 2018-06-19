@@ -1,152 +1,190 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:2:1-44:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\fe353cb64e4a5c6f8afa06d4ed4b37e4\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6edbb5165725cb8a6152358f077b1ad3\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\ed85b2e493736062613e6f09b32cfe5c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c1d09d3a03d3ef92e79487be2659fca3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1104b50804affb49bf63afdf0e3f4b37\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\51e9a648cfe36e69673a10b0675c98f2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\6f88b966dcdf81f1d0fce7d54802c064\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\9e267fcbfaf60c6ae5e4be8010ac4412\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\a753a12763971025805d866413926207\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\72f6abfa2779acdc336ac00a09111766\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\f2527b351d56ad4b1c7534b6b0dcfb48\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ac27261615b34d9203bfd5b86e4f0037\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0bf5dbd0180af6a26f87c52e9fbbe507\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:2:1-66:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\350e9b19454321af5cc9ae125d85870a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\8995d09dd3747dbcabdbd649ae02941f\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\0e5fa288f02d2fd98a63ccaa4cfafe3f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7fa5336c7ea8632ce1709827c36efb7a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\48389e5d9686c71a40482b309f3e09d1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\56694e32a8d28cdece3c6ec340134afc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\12885ac7ec0c6d91fd8bbe095e83a301\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\5f12a22b640725f682caae6f6c409087\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f62818a3b4402513833456cf9cf2a041\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3dfcf6345b0f879a2d94efff859a4b5f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\41f894fb72ce43b7a355a619976315b0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\bba3192e1c56e7030b4675832b75dafc\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\da8539177914368b2f8e1b3c0649cc47\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:2:1-66:12
 	package
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:3:5-50
-		INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:3:5-50
+		INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:2:1-44:12
-		INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:2:1-66:12
+		INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:2:1-44:12
-		INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:2:1-66:12
+		INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#com.android.alarm..permission.SET_ALARM
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.NFC
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:5:5-62
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:7:5-62
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:5:22-59
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:7:22-59
 uses-feature#android.hardware.nfc
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:7:5-9:36
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:9:5-11:36
 	android:required
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:9:9-33
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:11:9-33
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:8:9-44
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:10:9-44
 uses-feature#android.hardware.camera2
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:11:5-74
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:12:5-61
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:11:19-58
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:12:19-58
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:12:5-97
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:14:5-81
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:14:22-78
 application
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:14:5-42:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6edbb5165725cb8a6152358f077b1ad3\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6edbb5165725cb8a6152358f077b1ad3\AndroidManifest.xml:9:5-20
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:16:5-64:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\8995d09dd3747dbcabdbd649ae02941f\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\8995d09dd3747dbcabdbd649ae02941f\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:19:9-35
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:17:9-41
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:19:9-41
 	android:roundIcon
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:18:9-54
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:20:9-54
 	android:icon
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:16:9-43
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:18:9-43
 	android:allowBackup
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:20:9-40
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:22:9-40
 activity#cegeka.goalfollower.ro.goalfollower.MainActivity
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:21:9-27:20
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:23:9-30:20
+	android:screenOrientation
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:24:13-49
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:21:19-47
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:23:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:28:27-74
 activity#cegeka.goalfollower.ro.goalfollower.AddActivity
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:28:9-49
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:31:9-33:15
+	android:screenOrientation
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:32:13-49
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:28:19-46
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:31:19-46
 activity#cegeka.goalfollower.ro.goalfollower.ListActivity
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:29:9-50
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:34:9-36:15
+	android:screenOrientation
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:35:13-49
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:29:19-47
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:34:19-47
 activity#cegeka.goalfollower.ro.goalfollower.BeamActivity
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:30:9-59
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:37:9-39:15
+	android:screenOrientation
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:38:13-49
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:30:19-47
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:37:19-47
+activity#cegeka.goalfollower.ro.goalfollower.RecActivity
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:40:9-42:15
+	android:screenOrientation
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:41:13-49
+	android:name
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:40:19-46
 provider#android.support.v4.content.FileProvider
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:32:9-40:20
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:44:9-52:20
 	android:grantUriPermissions
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:36:13-47
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:48:13-47
 	android:authorities
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:34:13-83
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:46:13-83
 	android:exported
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:35:13-37
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:33:13-67
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:45:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:37:13-39:64
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:49:13-51:54
 	android:resource
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:39:17-51
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:51:17-51
 	android:name
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml:38:17-67
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:50:17-67
+activity#cegeka.goalfollower.ro.goalfollower.More_Info
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:54:9-56:15
+	android:screenOrientation
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:55:13-49
+	android:name
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:54:19-44
+activity#cegeka.goalfollower.ro.goalfollower.Notification_1
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:57:9-59:25
+	android:screenOrientation
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:58:13-49
+	android:name
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:57:19-49
+receiver#cegeka.goalfollower.ro.goalfollower.Notification_reciever
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:61:9-58
+	android:name
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:61:19-56
+receiver#cegeka.goalfollower.ro.goalfollower.Notification_reciever_2
+ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:62:9-60
+	android:name
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml:62:19-58
 uses-sdk
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\fe353cb64e4a5c6f8afa06d4ed4b37e4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\fe353cb64e4a5c6f8afa06d4ed4b37e4\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6edbb5165725cb8a6152358f077b1ad3\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\6edbb5165725cb8a6152358f077b1ad3\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\ed85b2e493736062613e6f09b32cfe5c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\ed85b2e493736062613e6f09b32cfe5c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c1d09d3a03d3ef92e79487be2659fca3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c1d09d3a03d3ef92e79487be2659fca3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1104b50804affb49bf63afdf0e3f4b37\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1104b50804affb49bf63afdf0e3f4b37\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\51e9a648cfe36e69673a10b0675c98f2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\51e9a648cfe36e69673a10b0675c98f2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\6f88b966dcdf81f1d0fce7d54802c064\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\6f88b966dcdf81f1d0fce7d54802c064\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\9e267fcbfaf60c6ae5e4be8010ac4412\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\9e267fcbfaf60c6ae5e4be8010ac4412\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\a753a12763971025805d866413926207\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\a753a12763971025805d866413926207\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\72f6abfa2779acdc336ac00a09111766\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\72f6abfa2779acdc336ac00a09111766\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\f2527b351d56ad4b1c7534b6b0dcfb48\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\f2527b351d56ad4b1c7534b6b0dcfb48\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ac27261615b34d9203bfd5b86e4f0037\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ac27261615b34d9203bfd5b86e4f0037\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0bf5dbd0180af6a26f87c52e9fbbe507\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Cristi\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0bf5dbd0180af6a26f87c52e9fbbe507\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\350e9b19454321af5cc9ae125d85870a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\350e9b19454321af5cc9ae125d85870a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\8995d09dd3747dbcabdbd649ae02941f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\8995d09dd3747dbcabdbd649ae02941f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\0e5fa288f02d2fd98a63ccaa4cfafe3f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\0e5fa288f02d2fd98a63ccaa4cfafe3f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7fa5336c7ea8632ce1709827c36efb7a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7fa5336c7ea8632ce1709827c36efb7a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\48389e5d9686c71a40482b309f3e09d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\48389e5d9686c71a40482b309f3e09d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\56694e32a8d28cdece3c6ec340134afc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\56694e32a8d28cdece3c6ec340134afc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\12885ac7ec0c6d91fd8bbe095e83a301\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\12885ac7ec0c6d91fd8bbe095e83a301\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\5f12a22b640725f682caae6f6c409087\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\5f12a22b640725f682caae6f6c409087\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f62818a3b4402513833456cf9cf2a041\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f62818a3b4402513833456cf9cf2a041\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3dfcf6345b0f879a2d94efff859a4b5f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3dfcf6345b0f879a2d94efff859a4b5f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\41f894fb72ce43b7a355a619976315b0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\41f894fb72ce43b7a355a619976315b0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\bba3192e1c56e7030b4675832b75dafc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\bba3192e1c56e7030b4675832b75dafc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\da8539177914368b2f8e1b3c0649cc47\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\qwert\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\da8539177914368b2f8e1b3c0649cc47\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Cristi\Documents\privatecegekagoals\GoalFollower\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\qwert\AndroidStudioProjects\GoalFollower\app\src\main\AndroidManifest.xml

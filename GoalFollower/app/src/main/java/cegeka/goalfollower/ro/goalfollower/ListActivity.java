@@ -52,6 +52,9 @@ public class ListActivity extends AppCompatActivity {
         SimpleDateFormat format =
                 new SimpleDateFormat("yyyy-MM-dd");
         final ListView GoalListView = (ListView) findViewById(R.id.GoalListView);
+        names.clear();
+        descrips.clear();
+        duedate.clear();
         for (Goal item : returnlist) {
             names.add(item.desc);
             descrips.add(item.descrip);

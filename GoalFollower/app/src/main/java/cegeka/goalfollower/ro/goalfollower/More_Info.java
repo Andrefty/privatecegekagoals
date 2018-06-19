@@ -71,6 +71,12 @@ public class More_Info extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
+        Intent intent13 = new Intent(getApplicationContext() , Notification_reciever_2.class);
+        intent13.putExtra("index" , index);
+        intent13.setAction("MY_NOTIFICATION_MESSAGE_2");
+        PendingIntent pendingIntent12 = PendingIntent.getBroadcast(getApplicationContext(), index, intent13, PendingIntent.FLAG_UPDATE_CURRENT);
+        alarmManagers[index] = (AlarmManager) getSystemService(ALARM_SERVICE);
+        alarmManagers[index].cancel(pendingIntent12);
         returnlist.remove(index);
         S_description_not.remove(index);
         S_name_not.remove(index);
@@ -90,6 +96,7 @@ public class More_Info extends AppCompatActivity {
         description_not = (EditText) findViewById(R.id.not_description_edit_text);
         duration_not = (EditText) findViewById(R.id.not_time_edit_text);
         desc_not=(TextView) findViewById(R.id.textView4);
+        Log.d("caba",descrips.get(index));
         desc_not.setText(descrips.get(index));
         //itemmf.des="a";
 //        for(int i=1;i<=1001;i++) ndt.add(itemmf);
