@@ -42,7 +42,7 @@ public class More_Info extends AppCompatActivity {
     String filenameforcheck="checkbox";
     String filenamefordesc="desctime";
     String filenameforname="nae234852045";
-
+    static String filenamescore="odjfk";
     Button set;
     Button done;
     EditText name_not;
@@ -51,6 +51,7 @@ public class More_Info extends AppCompatActivity {
     TextView desc_not;
     public static ArrayList<String> S_name_not = new ArrayList<>();
     public static ArrayList<String> S_description_not =  new ArrayList<>();
+    public static ArrayList<Integer> opkivus=new ArrayList<>(Collections.nCopies(1, 0));
     String S_duration_not;
     int I_duration_not;
     int[] durations = new int[1001];
@@ -67,8 +68,7 @@ public class More_Info extends AppCompatActivity {
         done=findViewById(R.id.button2);
         index = in.getIntExtra("com.example.cristi.firstcegeka.Item" , -1);
         Toast.makeText(this, index + "" , Toast.LENGTH_LONG).show();
-
-done.setOnClickListener(new View.OnClickListener() {
+        done.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         returnlist.remove(index);
@@ -76,6 +76,8 @@ done.setOnClickListener(new View.OnClickListener() {
         S_name_not.remove(index);
         //Log.d("caba",index+"");
         sum=sum+100;
+        opkivus.set(0,sum);
+        Addscor();
         Addg();
         Adddesc();
         Addnem();
@@ -128,7 +130,7 @@ done.setOnClickListener(new View.OnClickListener() {
                     alarmManagers[index] = (AlarmManager) getSystemService(ALARM_SERVICE);
                     alarmManagers[index].setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 60000 *durations[index], pendingIntent12);
                    // Toast.makeText(getApplicationContext() , "" + f , Toast.LENGTH_LONG).show();
-                    //intentArray.add(pendingIntent12);
+                // intentArray.add(pendingIntent12);
                 //}
                 Toast.makeText(getApplicationContext(), "Notificare setata", Toast.LENGTH_LONG).show();
                // Intent intent6 = new Intent(getApplicationContext(), ListActivity.class);
@@ -138,8 +140,6 @@ done.setOnClickListener(new View.OnClickListener() {
                 //S_name_not.clear();
                 //S_description_not.clear();
                 finish();
-
-
             }
         });
 
@@ -247,4 +247,22 @@ public void Addnem(){
 
         }
     }
+    public void Addscor() {
+        File myfile = new File(this.getFilesDir(), filenamescore);
+        FileOutputStream outputStream;
+        try {
+            outputStream = openFileOutput(filenamescore, MODE_PRIVATE);
+            ObjectOutputStream o = new ObjectOutputStream(outputStream);
+            o.reset();
+            o.writeObject(opkivus);
+            o.flush();
+            o.close();
+            if (myfile.exists()) Toast.makeText(More_Info.this, "yes", Toast.LENGTH_LONG).show();
+        } catch (Exception e) {
+            Toast.makeText(More_Info.this, "no", Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+
+        }
+    }
+
 }

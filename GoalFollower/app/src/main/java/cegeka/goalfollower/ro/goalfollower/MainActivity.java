@@ -23,7 +23,11 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+
+import static cegeka.goalfollower.ro.goalfollower.More_Info.filenamescore;
+import static cegeka.goalfollower.ro.goalfollower.More_Info.opkivus;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -83,7 +87,17 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
+    public void Readscor() {
+        FileInputStream fis;
+        try {
+            fis = openFileInput(filenamescore);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            opkivus = (ArrayList<Integer>) ois.readObject();
+            ois.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,7 +106,8 @@ public class MainActivity extends AppCompatActivity {
         prof_pic = (Button) findViewById(R.id.prof_pic);
         score = (TextView) findViewById(R.id.score_text_view);
         Readf();
-
+        Readscor();
+        More_Info.sum=opkivus.get(0);
         score.setText("Your Score is : " + More_Info.sum);
 
         refresh = (Button) findViewById(R.id.refresh_btn);
