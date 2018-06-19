@@ -32,19 +32,22 @@ import static cegeka.goalfollower.ro.goalfollower.AddActivity.filename;
 import static cegeka.goalfollower.ro.goalfollower.More_Info.S_description_not;
 import static cegeka.goalfollower.ro.goalfollower.More_Info.S_name_not;
 import static cegeka.goalfollower.ro.goalfollower.More_Info.index;
-import static cegeka.goalfollower.ro.goalfollower.More_Info.ver;
 
 public class ListActivity extends AppCompatActivity {
 
   public static ArrayList<Goal> returnlist=new ArrayList<Goal>();
     List<String> names=new ArrayList<>();
-     static List<String> descrips=new ArrayList<>();
+    static List<String> descrips=new ArrayList<>();
     List<Date> duedate=new ArrayList<>();
     Button save;
+    static Activity act;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+        act = this;
+
         Readf();
         SimpleDateFormat format =
                 new SimpleDateFormat("yyyy-MM-dd");
@@ -67,7 +70,6 @@ public class ListActivity extends AppCompatActivity {
                 startActivity(detailIntent);
             }
         });
-if(ver==true)   {ver=false; finish();}
     }
     public void Readf(){FileInputStream fis;
         try {

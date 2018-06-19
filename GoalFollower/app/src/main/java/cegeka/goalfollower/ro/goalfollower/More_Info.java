@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -41,7 +42,7 @@ public class More_Info extends AppCompatActivity {
     String filenameforcheck="checkbox";
     String filenamefordesc="desctime";
     String filenameforname="nae234852045";
-public static boolean ver=false;
+
     Button set;
     Button done;
     EditText name_not;
@@ -59,8 +60,9 @@ public static boolean ver=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_more__info);
+
+
         Intent in = getIntent();
         done=findViewById(R.id.button2);
         index = in.getIntExtra("com.example.cristi.firstcegeka.Item" , -1);
@@ -72,13 +74,12 @@ done.setOnClickListener(new View.OnClickListener() {
         returnlist.remove(index);
         S_description_not.remove(index);
         S_name_not.remove(index);
+        //Log.d("caba",index+"");
         sum=sum+100;
-        /*SharedPreferences sharedPref = More_Info.this.getPreferences(Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("nuime", sum);
-        editor.commit();*/
         Addg();
-        ver=true;
+        Adddesc();
+        Addnem();
+        ListActivity.act.finish();
         finish();
     }
 });
@@ -111,6 +112,7 @@ done.setOnClickListener(new View.OnClickListener() {
 
                 S_duration_not = duration_not.getText().toString();
                 I_duration_not = Integer.parseInt(S_duration_not);
+                Toast.makeText(getApplicationContext() , "" + I_duration_not , Toast.LENGTH_LONG).show();
                 itemmf=name_not.getText().toString();
                 S_name_not.set(index,itemmf);
                 upoi=description_not.getText().toString();
@@ -133,8 +135,8 @@ done.setOnClickListener(new View.OnClickListener() {
                // startActivity(intent6);
                 Adddesc();
                 Addnem();
-                S_name_not.clear();
-                S_description_not.clear();
+                //S_name_not.clear();
+                //S_description_not.clear();
                 finish();
 
 

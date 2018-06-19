@@ -20,17 +20,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddActivity" />
-        <activity android:name=".ListActivity" />
-        <activity android:name=".BeamActivity" />
-        <activity android:name=".RecActivity" />
+        <activity android:name=".AddActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ListActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".BeamActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".RecActivity"
+            android:screenOrientation="portrait"
+            />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -42,8 +51,12 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".More_Info" />
-        <activity android:name=".Notification_1"></activity>
+        <activity android:name=".More_Info"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Notification_1"
+            android:screenOrientation="portrait"
+            ></activity>
 
         <receiver android:name=".Notification_reciever"/>
         <receiver android:name=".Notification_reciever_2"/>
