@@ -5,9 +5,7 @@ import java.util.Date;
 
 public class Goal implements Serializable{
     public String desc;
-
     public String descrip;
-
-
     public Date dueDate;
+    public String pass;
 }

@@ -36,6 +36,7 @@ public class AddActivity extends AppCompatActivity {
     EditText editTextdesc = null;
     EditText textDate = null;
     EditText editTextdescrip=null;
+    EditText editpass;
     Button addbtn = null;
     Button beam = null;
     static String filename = "goals";
@@ -45,6 +46,7 @@ public class AddActivity extends AppCompatActivity {
     String stupiddesc=null;
     String stupiddate=null;
     String stupiddescrip=null;
+    String stupidpass=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,7 @@ public class AddActivity extends AppCompatActivity {
         editTextdesc = findViewById(R.id.editText);
         editTextdescrip=findViewById(R.id.editText5);
         textDate = findViewById(R.id.editText3);
+        editpass=findViewById(R.id.editText7);
         addbtn = findViewById(R.id.button3);
         beam = findViewById(R.id.beambttn);
 
@@ -65,7 +68,8 @@ public class AddActivity extends AppCompatActivity {
                     stupiddesc = editTextdesc.getText().toString();
                     stupiddate=textDate.getText().toString();
                     stupiddescrip=editTextdescrip.getText().toString();
-                    concat=stupiddesc+"/"+stupiddate+"/"+stupiddescrip+"/";
+                    stupidpass=editpass.getText().toString();
+                    concat=stupiddesc+"/"+stupiddate+"/"+stupiddescrip+"/"+stupidpass+"/";
                     Intent intent =
                             new Intent(AddActivity.this, BeamActivity.class);
                     startActivity(intent);

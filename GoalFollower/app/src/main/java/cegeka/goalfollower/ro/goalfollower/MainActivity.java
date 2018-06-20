@@ -174,6 +174,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    public void OpenUnlock(View view) {
+        Intent intent =
+                new Intent(MainActivity.this, UnlockActivity.class);
+        startActivity(intent);
+    }
+    public void OpensetPass(View view) {
+        Intent intent =
+                new Intent(MainActivity.this, SetpassActivity.class);
+        startActivity(intent);
+    }
 
     public void OpenAddActivity(View view) {
         Intent intent =

@@ -32,6 +32,7 @@ import static cegeka.goalfollower.ro.goalfollower.AddActivity.filename;
 import static cegeka.goalfollower.ro.goalfollower.ListActivity.descrips;
 import static cegeka.goalfollower.ro.goalfollower.ListActivity.returnlist;
 import static cegeka.goalfollower.ro.goalfollower.ListActivity.sizelist;
+import static cegeka.goalfollower.ro.goalfollower.UnlockRecActivity.ifvalidpass;
 
 public class More_Info extends AppCompatActivity {
 
@@ -40,6 +41,7 @@ public class More_Info extends AppCompatActivity {
     String itemmf;
     String upoi;
     static int index;
+    static int indexfordel;
     public static int sum ;
     String filenameforcheck="checkbox";
     String filenamefordesc="desctime";
@@ -71,28 +73,14 @@ public class More_Info extends AppCompatActivity {
         done=findViewById(R.id.button2);
         index = in.getIntExtra("com.example.cristi.firstcegeka.Item" , -1);
         Toast.makeText(this, index + "" , Toast.LENGTH_LONG).show();
+
         done.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        Intent intent13 = new Intent(getApplicationContext() , Notification_reciever_2.class);
-        intent13.putExtra("index" , index);
-        intent13.setAction("MY_NOTIFICATION_MESSAGE_2");
-        PendingIntent pendingIntent12 = PendingIntent.getBroadcast(getApplicationContext(), sizelist-1, intent13, PendingIntent.FLAG_UPDATE_CURRENT);
-        alarmManagers.set(sizelist-1,(AlarmManager) getSystemService(ALARM_SERVICE));
-        alarmManagers.get(sizelist-1).cancel(pendingIntent12);
-        alarmManagers.remove(sizelist-1);
-        returnlist.remove(index);
-        S_description_not.remove(index);
-        S_name_not.remove(index);
-        //Log.d("caba",index+"");
-        sum=sum+100;
-        opkivus.set(0,sum);
-        Addscor();
-        Addg();
-        Adddesc();
-        Addnem();
-        ListActivity.act.finish();
-        finish();
+            indexfordel=index;
+        Intent passssssIntent = new Intent (More_Info.this ,UnlockRecActivity.class);
+        startActivityForResult(passssssIntent,3);
+        Toast.makeText(More_Info.this,ifvalidpass+"",Toast.LENGTH_LONG).show();
     }
 });
         set = (Button) findViewById(R.id.set_not_info_btn);
@@ -156,6 +144,38 @@ public class More_Info extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 3){
+            switch (resultCode){
+                case Activity.RESULT_OK:{Intent intent13 = new Intent(getApplicationContext() , Notification_reciever_2.class);
+                    intent13.putExtra("index" , index);
+                    intent13.setAction("MY_NOTIFICATION_MESSAGE_2");
+                    PendingIntent pendingIntent12 = PendingIntent.getBroadcast(getApplicationContext(), sizelist-1, intent13, PendingIntent.FLAG_UPDATE_CURRENT);
+                    alarmManagers.set(sizelist-1,(AlarmManager) getSystemService(ALARM_SERVICE));
+                    alarmManagers.get(sizelist-1).cancel(pendingIntent12);
+                    alarmManagers.remove(sizelist-1);
+                    returnlist.remove(index);
+                    S_description_not.remove(index);
+                    S_name_not.remove(index);
+                    //Log.d("caba",index+"");
+                    sum=sum+100;
+                    opkivus.set(0,sum);
+                    Addscor();
+                    Addg();
+                    Adddesc();
+                    Addnem();
+                    ListActivity.act.finish();
+                    finish();
+                    break;}
+                default:
+                    Toast.makeText(More_Info.this, "Parola gresita", Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+
     public void Addgcheck() {
         File myfile = new File(this.getFilesDir(), filenameforcheck);
         FileOutputStream outputStream;
