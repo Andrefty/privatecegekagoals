@@ -21,6 +21,7 @@ public class ItemAdapter extends BaseAdapter {
     LayoutInflater mInflater;
     List<String> names;
     List<Date> duedate;
+
   //  List<Boolean>checked;
 
     public ItemAdapter(Context c , List<String> n ,List<Date> d /*, List<Boolean> ce*/)
@@ -32,9 +33,7 @@ public class ItemAdapter extends BaseAdapter {
     }
 
     @Override
-    public int getCount() {
-        return names.size();
-    }
+    public int getCount() { return names.size(); }
 
     @Override
     public Object getItem(int position) {

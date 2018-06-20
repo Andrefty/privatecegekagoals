@@ -28,8 +28,10 @@ import java.util.List;
 
 import static android.app.PendingIntent.getActivity;
 import static cegeka.goalfollower.ro.goalfollower.AddActivity.filename;
+
 import static cegeka.goalfollower.ro.goalfollower.ListActivity.descrips;
 import static cegeka.goalfollower.ro.goalfollower.ListActivity.returnlist;
+import static cegeka.goalfollower.ro.goalfollower.ListActivity.sizelist;
 
 public class More_Info extends AppCompatActivity {
 
@@ -55,7 +57,8 @@ public class More_Info extends AppCompatActivity {
     String S_duration_not;
     int I_duration_not;
     int[] durations = new int[1001];
-    AlarmManager[] alarmManagers = new AlarmManager[1001] ;
+    AlarmManager asfasdodf;
+    ArrayList<AlarmManager> alarmManagers = new ArrayList<>(Collections.nCopies(1001, asfasdodf));
 
 
     @Override
@@ -74,9 +77,10 @@ public class More_Info extends AppCompatActivity {
         Intent intent13 = new Intent(getApplicationContext() , Notification_reciever_2.class);
         intent13.putExtra("index" , index);
         intent13.setAction("MY_NOTIFICATION_MESSAGE_2");
-        PendingIntent pendingIntent12 = PendingIntent.getBroadcast(getApplicationContext(), index, intent13, PendingIntent.FLAG_UPDATE_CURRENT);
-        alarmManagers[index] = (AlarmManager) getSystemService(ALARM_SERVICE);
-        alarmManagers[index].cancel(pendingIntent12);
+        PendingIntent pendingIntent12 = PendingIntent.getBroadcast(getApplicationContext(), sizelist-1, intent13, PendingIntent.FLAG_UPDATE_CURRENT);
+        alarmManagers.set(sizelist-1,(AlarmManager) getSystemService(ALARM_SERVICE));
+        alarmManagers.get(sizelist-1).cancel(pendingIntent12);
+        alarmManagers.remove(sizelist-1);
         returnlist.remove(index);
         S_description_not.remove(index);
         S_name_not.remove(index);
@@ -99,7 +103,7 @@ public class More_Info extends AppCompatActivity {
         Log.d("caba",descrips.get(index));
         desc_not.setText(descrips.get(index));
         //itemmf.des="a";
-//        for(int i=1;i<=1001;i++) ndt.add(itemmf);
+        //for(int i=1;i<=1001;i++) ndt.add(itemmf);
         //Adddesc();
         for(int i=0;i<1001;i++) S_name_not.add("");
         for(int i=0;i<1001;i++) S_description_not.add("");
@@ -134,8 +138,9 @@ public class More_Info extends AppCompatActivity {
                     intent13.putExtra("index" , index);
                     intent13.setAction("MY_NOTIFICATION_MESSAGE_2");
                     PendingIntent pendingIntent12 = PendingIntent.getBroadcast(getApplicationContext(), index, intent13, PendingIntent.FLAG_UPDATE_CURRENT);
-                    alarmManagers[index] = (AlarmManager) getSystemService(ALARM_SERVICE);
-                    alarmManagers[index].setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 60000 *durations[index], pendingIntent12);
+//                    alarmManagers.add(null);
+                    alarmManagers.set(index,(AlarmManager) getSystemService(ALARM_SERVICE));
+                    alarmManagers.get(index).setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 60000 *durations[index], pendingIntent12);
                    // Toast.makeText(getApplicationContext() , "" + f , Toast.LENGTH_LONG).show();
                 // intentArray.add(pendingIntent12);
                 //}

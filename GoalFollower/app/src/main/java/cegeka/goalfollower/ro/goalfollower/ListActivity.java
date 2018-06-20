@@ -41,7 +41,7 @@ public class ListActivity extends AppCompatActivity {
     List<Date> duedate=new ArrayList<>();
     Button save;
     static Activity act;
-
+static int sizelist=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +60,7 @@ public class ListActivity extends AppCompatActivity {
             descrips.add(item.descrip);
             duedate.add(item.dueDate);
         }
+        sizelist=names.size();
         ItemAdapter itemAdapt =  new ItemAdapter(this , names , duedate  );
 
         GoalListView.setAdapter(itemAdapt);
